@@ -18,6 +18,8 @@ namespace ThreeSumApp
 
             for(int i = 0; i < arr.Length - 2; i++)
             {
+                // skip dups 
+                if(i > 0 && arr[i] == arr[i - 1]) continue; 
                 // create the anchors 
                 int left = i + 1; 
                 int right = arr.Length - 1;
